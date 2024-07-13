@@ -18,6 +18,7 @@ sys.path.append('{}/third_party/Matcha-TTS'.format(ROOT_DIR))
 
 import argparse
 import gradio as gr
+demo.launch(share = False) 
 import numpy as np
 import torch
 import torchaudio
