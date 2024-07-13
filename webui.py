@@ -183,4 +183,4 @@ if __name__ == '__main__':
     prompt_sr, target_sr = 16000, 22050
     default_data = np.zeros(target_sr)
     main()
-  launch(share=False)
+  .launch(share=False)
