@@ -18,7 +18,6 @@ sys.path.append('{}/third_party/Matcha-TTS'.format(ROOT_DIR))
 
 import argparse
 import gradio as gr
-demo.launch(share = False) 
 import numpy as np
 import torch
 import torchaudio
@@ -184,3 +183,5 @@ if __name__ == '__main__':
     prompt_sr, target_sr = 16000, 22050
     default_data = np.zeros(target_sr)
     main()
+iface = gr.Interface(fn=predict, inputs="text", outputs="text", share=False)
+iface.launch()
