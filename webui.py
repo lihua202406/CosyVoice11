@@ -183,5 +183,4 @@ if __name__ == '__main__':
     prompt_sr, target_sr = 16000, 22050
     default_data = np.zeros(target_sr)
     main()
-iface = gr.Interface(fn=predict, inputs="text", outputs="text", share=False)
-iface.launch()
+  launch(share=False)
